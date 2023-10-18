@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./navBar.css";
+
 const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false);
@@ -15,6 +16,7 @@ const Navbar = () => {
       <div className={`nav-toggle ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}>
         <div className="bar"></div>
       </div>
+      <cartWidget />
     </div>
   )
 }
