@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className={`nav-toggle ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}>
         <div className="bar"></div>
       </div>
-      <cartWidget />
+      <CartWidget />
     </div>
   )
 }
